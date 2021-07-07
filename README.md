@@ -6,6 +6,10 @@ The code has been tested on Python 3.7 + PyTorch 1.7. To run the training and te
 ## Setup
 * Install PyTorch and dependencies from http://pytorch.org.
 * Install Torch vision from the source.
+* Install deepsort requirements:
+```
+pip install -r requirements.txt
+```
 
 ## Data Loading
 ./MSDA_DataLoader.py in folder ./DataLoader is used to load the dataset, and split the training and testing data by configuring the auxiliary training data rate in the target domain 
