@@ -17,7 +17,7 @@ pip install -r requirements.txt
 The data and the corresponding labels are returned together by: 
 ```./DataLoader/MSDA_LoadTensorData.py```
 
-* The loaded EEG data format: ```.mat```
+* The EEG data format: ```.mat```
 * The shape of the EEG data: \[61, 27] ```the channel unmber is 61, and the frequency points are 27)```
 
 ## Training
