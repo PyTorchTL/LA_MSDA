@@ -5,6 +5,7 @@ import torch
 def convert_to_onehot(sca_label, class_num=2):
     return np.eye(class_num)[sca_label]
 
+# the weight of label classes. 
 
 class LocalWeight:
 
