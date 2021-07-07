@@ -12,12 +12,13 @@ pip install -r requirements.txt
 ```
 
 ## Data Loading
-./MSDA_DataLoader.py in folder ./DataLoader is used to load the dataset, and split the training and testing data by configuring the auxiliary training data rate in the target domain 
+```./MSDA_DataLoader.py``` in folder ./DataLoader is used to load the dataset, and split the training and testing data by configuring the auxiliary training data rate in the target domain 
 
 The data and the corresponding labels are returned together by: 
-```
-./DataLoader/MSDA_LoadTensorData.py
-```
+```./DataLoader/MSDA_LoadTensorData.py```
+
+* The loaded EEG data format: ```.mat```
+* The shape of the EEG data: \[61, 27] ```the channel unmber is 61, and the frequency points are 27)```
 
 ## Training
 Multi-source domain adaptation training can be launched by running:
