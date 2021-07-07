@@ -5,7 +5,10 @@ import torch.nn.functional as F
 import torch
 import numpy as np
 
+# It provides the network structure of LA-MSDA,
+# including stage1 (feature extraction), Stage 2 (local label-based alignment), and stage 3 (global optimization).
 
+# stage1 (feature extraction)
 # Domain-specific
 class ComEEGNet(nn.Module):
 
@@ -89,7 +92,7 @@ class DSCNN(nn.Module):
 
         return out
 
-
+# model framework
 
 class LAMSDA(nn.Module):
 
