@@ -6,6 +6,7 @@ from .MSDA_LoadTensorData import MytenSorData
 import numpy as np
 from sklearn.model_selection import train_test_split
 
+# load the dataset, and split the training and testing data by configuring the auxiliary training data rate in the target domain
 
 def load_data(root_path, file, batch_size, name_list, shape, testrate, cudadevice, kwargs):
     # get sample and label
