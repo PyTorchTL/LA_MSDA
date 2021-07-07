@@ -25,7 +25,7 @@ The code has been tested on Python 3.7 + PyTorch 1.7. To run the training and te
 ```./MSDA_DataLoader.py``` in folder ./DataLoader is used to load the dataset, and split the training and testing data by configuring the auxiliary training data rate in the target domain.
 
 The data and the corresponding labels are returned together by: 
-```./DataLoader/MSDA_LoadTensorData.py```
+```./DataLoader/MSDA_LoadTensorData.py```, and the purpose is to facilitate the division of DataLoader.
 
 EEG data:
 1. The EEG data format: ```.mat```
