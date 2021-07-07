@@ -3,6 +3,7 @@ import csv
 import numpy as np
 import torch
 
+# the data and the corresponding labels are returned together, and the purpose is to facilitate the division of DataLoader
 
 class MytenSorData(torch.utils.data.Dataset):
     # Initialize function, get data
