@@ -186,12 +186,12 @@ if __name__ == '__main__':
     parser.add_argument("--seed", type=int, default=8, help="")
     parser.add_argument("--log_interval", type=int, default=10, help="")
     parser.add_argument("--l2_decay", type=float, default=5e-4, help="")
-    parser.add_argument("--class_num", type=int, default=2, help="")
+    parser.add_argument("--class_num", type=int, default=2, help="")   # number of classes
     parser.add_argument("--sample_time", type=float, default=0.5, help="")
     parser.add_argument("--test_rate", type=float, default=0.2, help="Test rate of the dataset")  # auxiliary training data rate
     parser.add_argument("--namelist", default=['data', 'label'], help="")
-    parser.add_argument("--shape", default=[61, 27], help="")
-    parser.add_argument("--num_source", default=14, help="")
+    parser.add_argument("--shape", default=[61, 27], help="")   # the number of channel is 61, and the frequency points are 27
+    parser.add_argument("--num_source", default=14, help="")   #corresponding to 14 source domains
     parser.add_argument("--source_name_list", type=list, default=[], help="")
     parser.add_argument("--target_name_list", type=list, default=[], help="")
     parser.add_argument("--test_interval", type=int, default=1, help="")
